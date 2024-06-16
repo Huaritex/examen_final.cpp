@@ -78,6 +78,9 @@ Descripcion de las funciones, estructuras
 > [!TIP]
 Diagrama de flujo
 
+![image](https://github.com/Huaritex/examen_final.cpp/assets/159574524/378acbb5-20a6-42b5-b96b-a0a0e5fe9b01)
+
+
 
 > [!WARNING]
 Creditos/Personas que contribuyeron al proyecto
