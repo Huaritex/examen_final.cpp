@@ -27,7 +27,7 @@ almacenarlos todos.
 > [!NOTE]
 Explicacion de base de datos existente
 
-  Se utiliza actualmente para almacenar fecha de eventos junto con el nombre y fecha del evento 
+  Se utiliza actualmente para almacenar futuros eventos junto con el nombre y fecha del evento, para tener todos los eventos ordenados o incluso la posibilidad de eliminar algun evento erroneo. 
 
   > [!TIP]
 Estructura de repositorio
