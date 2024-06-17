@@ -16,8 +16,11 @@ int main(){
                 cout << "Introduce la fecha (ano-mes-dia) y el evento: ";
                 getline(cin, date, ' ');
                 getline(cin, event);
-                if(date_valid(date)){
-                    add(date, event);
+                {
+                    string formato_de_dato;
+                    if(date_valid(date, formato_de_dato)){
+                        add(formato_de_dato, event);
+                    }
                 }
                 break;
 
@@ -25,20 +28,33 @@ int main(){
                 cout << "Introduce la fecha (ano-mes-dia) y el evento que deseas borrar: ";
                 getline(cin, date, ' ');
                 getline(cin, event);
-                delete_specific(date, event);
+                {
+                    string formato_de_dato;
+                    if(date_valid(date, formato_de_dato)){
+                        delete_specific(formato_de_dato, event);
+                    }
+                }
                 break;
 
             case 3:
                 cout << "Introduce la fecha (ano-mes-dia) para eliminar todos los eventos: ";
                 getline(cin, date);
-                delete_all(date);
+                {
+                    string formato_de_dato;
+                    if(date_valid(date, formato_de_dato)){
+                        delete_all(formato_de_dato);
+                    }
+                }
                 break;
 
             case 4:
                 cout << "Introduce la fecha (ano-mes-dia) para encontrar eventos: ";
                 getline(cin, date);
-                if(date_valid(date)){
-                    find(date);
+                {
+                    string formato_de_dato;
+                    if(date_valid(date, formato_de_dato)){
+                        find(formato_de_dato);
+                    }
                 }
                 break;
 

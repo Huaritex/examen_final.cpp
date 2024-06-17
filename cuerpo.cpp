@@ -10,7 +10,7 @@ void show_menu(){
     cout << "6. Salir del menu" << endl;
 }
 
-bool date_valid(const string& date){
+bool date_valid(const string& date, string& formato_de_dato){
     stringstream ss(date);
     int year, month, day;
     char sep1, sep2;
@@ -30,6 +30,11 @@ bool date_valid(const string& date){
         return false;
     }
 
+    stringstream formatted_ss;
+    formatted_ss << setfill('0') << setw(4) << year << "-"
+                << setw(2) << month << "-"
+                << setw(2) << day;
+    formato_de_dato = formatted_ss.str();
     return true;
 }
 
