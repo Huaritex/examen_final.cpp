@@ -27,9 +27,113 @@ almacenarlos todos.
 > [!NOTE]
 Explicacion de base de datos existente
 
-  Se utiliza actualmente para almacenar futuros eventos junto con el nombre y fecha del evento, para tener todos los eventos ordenados o incluso la posibilidad de eliminar algun evento erroneo. 
+Se utiliza actualmente para almacenar futuros eventos junto con el nombre y fecha del evento, para tener todos los eventos ordenados o incluso la posibilidad de eliminar algun evento erroneo.
 
-  > [!TIP]
+> [!NOTE]
+ Comparativa con diferentes SQL mas populares de C++
+
+### Oracle
+
+Oracle es uno de los sistemas de gestión de bases de datos (SGBD) más antiguos y es conocido por su robustez y escalabilidad. Es ampliamente utilizado en entornos empresariales grandes.
+
+- Alto rendimiento y disponibilidad.
+
+- Amplias capacidades de recuperacion ante desastres.
+
+- Soporte para SQL y PL/SQL.
+
+- Gran cantidad de herramientas de administracion.
+
+  *Usada en empresas grandes, sistemas financieros, ERP.*
+
+### Microsoft SQL server
+
+Es un SGBD desarrollado por Microsoft, conocido por su integración con otros productos de Microsoft como Azure y Power BI.
+
+- Integracion nativa con aplicaciones Microsoft.
+
+- Funcionalidades de analisis y reportes avanzados.
+
+- Soporte para T-SQL.
+
+- Escalabilidad y Seguridad
+
+  *Usada oara aplicaciones empresariales, BI, analisis de datos*
+
+### MySQL
+
+Es uno de los motores de bases de datos más populares para aplicaciones web, conocido por su velocidad y fiabilidad.
+
+- Codigo abierto y gratuito.
+
+- Amplio soporte comunatario.
+
+- Compatible con una variedad de lenguajes de programacion.
+
+- Escalabilidad adecuada para aplicaciones web.
+
+  *Usada para aplicaciones web, CMS como WordPress, Drupal, Joomia.*
+### SQlite
+
+Es una base de datos embebida en programas, utilizada principalmente en aplicaciones móviles y de escritorio.
+
+- Ligera y de facil implementacion.
+
+- No requiere un servidor separado.
+
+- Buena para aplicaciones de baja a moderada complejidad.
+
+  *Usada para aplicaciones moviles, aplicaciones de escritorio, dispositivos loT.*
+
+### MariaDB
+
+Fork de MySQL desarrollado después de la adquisición de MySQL por Oracle, mantiene compatibilidad con MySQL.
+
+- Codigo abierto y gratuito
+
+- Mejoras en rendimiento y caracteristicas adicionales respecto a MySQL.
+
+- Soporte para motores de almacenamiento adicionales.
+
+  *Usada para aplicaciones web, sustitucion de My SQL en proyectos existentes.*
+
+### PostgreSQL
+
+Es un SGBD objeto-relacional conocido por su robustez y extensibilidad.
+
+- Codigo abierto y gratuito
+
+- Soporte para funciones avanzadas como JSON, XML y busqueda de texto completo.
+
+- Capacidades avanzadas de transacciones y replicacion.
+
+  *Usada para aplicaciones empresariales, analisis de datos, aplicaciones geoespaciales*
+
+### COMPARATIVA Y JUSTIFICACION PARA IMPLEMENTACION ###
+![image](https://github.com/Huaritex/examen_final.cpp/assets/159574524/96143b16-44c9-4340-82e7-6f3793a6f31b)
+
+- Oracle y MS SQL Server 
+
+Son ideales para grandes empresas que necesitan bases de datos robustas y escalables con soporte empresarial.
+
+- My SQL y MariaDB
+
+Son opciones excelentes para aplicaciones web y startups que necesitan bases de datos rápidas y escalables con costos reducidos.
+
+- SQlite
+
+Es adecuado para aplicaciones móviles y de escritorio que requieren una base de datos embebida ligera.
+
+- PostgreSQL
+
+Es ideal para aplicaciones que requieren capacidades avanzadas de análisis y almacenamiento de datos complejos.
+
+> [!CAUTION]
+ Base de datos "Eventos"
+
+ la base de datos *Eventos* se justifica a su bajo costo a comparacion de los SQL y tambien al ser codigo abierto y su amplia flexibilidad para poder implementarse a otros servidores gracias a que es un codigo modulado y con opcion a mejorar de manera ordenada y eficiente, si bien es un SQL bastante simple, lo compensa su compatibilidad y diversidad a la hora de modificar.
+
+> [!TIP]
 Estructura de repositorio
 
 El repositorio viene conformado por una serie de modulacion que consiste en tres partes:
